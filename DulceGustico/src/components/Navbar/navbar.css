@@ -1,0 +1,78 @@
+/* Estilo del Navbar con temática de pastelería */
+
+/* Fondo general del Navbar */
+.navbar {
+    background: linear-gradient(135deg, #fbd3e9, #f7a1c4); /* Degradado pastel */
+    font-family: 'Pacifico', cursive; /* Fuente cursiva para estilo dulce */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo de la marca */
+  .navbar-brand {
+    color: #8b5a7d !important; /* Color marrón pastel */
+    font-size: 2rem; /* Más grande para destacar */
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  
+  /* Links del Navbar */
+  .nav-link {
+    color: #ff6b81 !important; /* Rosa pastel */
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f85a3e !important; /* Rojo más vibrante al pasar el cursor */
+    text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.8);
+  }
+  
+  /* Botón de colapso (menú móvil) */
+  .navbar-toggler {
+    border: 2px solid #f85a3e;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3342/3342137.png'); /* Icono de cupcake */
+    background-size: contain;
+  }
+  
+  /* Animación al desplegar el menú */
+  .navbar-collapse {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Estilo Responsive */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.8rem;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Fondo de cupcakes (puedes personalizar con una imagen propia) */
+  body {
+    background: url('https://www.facebook.com/escueladepasteleriadulcegustico/') no-repeat center center fixed;
+    background-size: cover;
+  } 
+  
+  /* Scroll suave */
+  html {
+    scroll-behavior: smooth;
+  }

@@ -1,0 +1,100 @@
+/* Estilos para la Landing Page de Dulce Gustico */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf0;
+    color: #4e342e;
+  }
+  
+  .landing-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .header {
+    background: url('https://images.unsplash.com/photo-1546099094-0a34f62cafd8') no-repeat center/cover;
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .subheader {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #f48fb1;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f06292;
+  }
+  
+  .feature-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+  }
+  
+  .feature-card {
+    max-width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .feature-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .feature-card h3 {
+    margin-top: 1rem;
+    color: #d81b60;
+  }
+  
+  .testimonial-section {
+    background: #ffe0b2;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+  }
+  
+  .testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    line-height: 1.8;
+  }
+  
+  .footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background: #4e342e;
+    color: white;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
