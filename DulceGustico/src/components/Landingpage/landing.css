@@ -1,105 +1,207 @@
-/* Estilos para la Landing Page de Dulce Gustico */
-
+/* Estilos generales */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fffaf0;
-    color: #4e342e;
-  }
-  
-  .landing-container {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .header {
-    background: url('https://images.unsplash.com/photo-1546099094-0a34f62cafd8') no-repeat center/cover;
-    color: white;
-    padding: 4rem 2rem;
-    border-radius: 15px;
-  }
-  
-  .header h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  .subheader {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fffaf5;
+  color: #4a4a4a;
+}
+
+/* Contenedor principal */
+.landing-container {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  padding: 5rem 2rem;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #7b3f00;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Especialidades */
+.specialties-section {
+  padding: 4rem 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  height: 400px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #7b3f00;
+}
+
+.btn-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+/* Nuestra Historia */
+.history-section {
+  padding: 4rem 2rem;
+  background: #ffe5b4;
+  border-radius: 50px;
+}
+
+.history-section h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #6a1b9a;
+}
+
+/* Testimonios */
+.testimonials-section {
+  padding: 4rem 2rem;
+  background: #fff3e0;
+  border-radius: 50px;
+}
+
+.testimonial-card {
+  border: none;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #7b3f00;
+}
+
+/* Llamado a la acción */
+.cta-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #ffccbc;
+}
+
+.cta-section h2 {
+  font-size: 3rem;
+  color: #6a1b9a;
+}
+
+.cta-section .btn-primary {
+  background: #6a1b9a;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.cta-section .btn-primary:hover {
+  background: #4a0072;
+}
+
+/* Contacto */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 3rem;
+  color: #6a1b9a;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 2px solid #6a1b9a;
+  border-radius: 20px;
+}
+
+.contact-form button {
+  background: #6a1b9a;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #4a0072;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
   }
 
-  .logo{
-    width: 50%;
-    border-radius: 50%;
+  .hero-subtitle {
+    font-size: 1.2rem;
   }
-  
-  .btn-primary {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    margin-top: 1.5rem;
-    background-color: #f48fb1;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background 0.3s;
+
+  .card-img-top {
+    height: 300px;
   }
-  
-  .btn-primary:hover {
-    background-color: #f06292;
+
+  .btn-overlay {
+    font-size: 0.9rem;
   }
-  
-  .feature-section {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 4rem 0;
+
+  .cta-section h2 {
+    font-size: 2rem;
   }
-  
-  .feature-card {
-    max-width: 300px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    margin: 1rem;
+
+  .contact-section h2 {
+    font-size: 2rem;
   }
-  
-  .feature-card img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .feature-card h3 {
-    margin-top: 1rem;
-    color: #d81b60;
-  }
-  
-  .testimonial-section {
-    background: #ffe0b2;
-    padding: 3rem 2rem;
-    border-radius: 15px;
-    margin-top: 3rem;
-  }
-  
-  .testimonial {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .testimonial p {
-    font-style: italic;
-    line-height: 1.8;
-  }
-  
-  .footer {
-    margin-top: 3rem;
-    padding: 2rem 0;
-    background: #4e342e;
-    color: white;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
+}

@@ -2,77 +2,109 @@
 
 /* Fondo general del Navbar */
 .navbar {
-    background: linear-gradient(135deg, #fbd3e9, #f7a1c4); /* Degradado pastel */
-    font-family: 'Pacifico', cursive; /* Fuente cursiva para estilo dulce */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #fbd3e9, #f7a1c4); /* Degradado pastel */
+  font-family: 'Pacifico', cursive; /* Fuente cursiva para estilo dulce */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo de la marca */
+.navbar-brand {
+  color: #8b5a7d !important; /* Color marrón pastel */
+  font-size: 2rem; /* Más grande para destacar */
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: rotate(-5deg) scale(1.1); /* Efecto de rotación al pasar el cursor */
+}
+
+/* Links del Navbar */
+.nav-link {
+  color: #ff6b81 !important; /* Rosa pastel */
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f85a3e !important; /* Rojo más vibrante al pasar el cursor */
+  text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.8); /* Sombras para resaltar */
+}
+
+/* Icono del dropdown */
+.nav-dropdown-item {
+  color: #f85a3e; /* Rojo pastel para los items del dropdown */
+}
+
+/* Botón de colapso (menú móvil) */
+.navbar-toggler {
+  border: 2px solid #f85a3e;
+}
+
+.navbar-toggler-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3342/3342137.png'); /* Icono de cupcake */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+}
+
+/* Animación al desplegar el menú */
+.navbar-collapse {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  /* Logo de la marca */
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilo Responsive */
+@media (max-width: 768px) {
   .navbar-brand {
-    color: #8b5a7d !important; /* Color marrón pastel */
-    font-size: 2rem; /* Más grande para destacar */
-    transition: transform 0.3s ease;
+    font-size: 1.8rem;
   }
-  
-  .navbar-brand:hover {
-    transform: rotate(-5deg) scale(1.1);
-  }
-  
-  /* Links del Navbar */
+
   .nav-link {
-    color: #ff6b81 !important; /* Rosa pastel */
-    margin: 0 10px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+    font-size: 1rem;
   }
-  
-  .nav-link:hover {
-    color: #f85a3e !important; /* Rojo más vibrante al pasar el cursor */
-    text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.8);
-  }
-  
-  /* Botón de colapso (menú móvil) */
-  .navbar-toggler {
-    border: 2px solid #f85a3e;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url('https://cdn-icons-png.flaticon.com/512/3342/3342137.png'); /* Icono de cupcake */
-    background-size: contain;
-  }
-  
-  /* Animación al desplegar el menú */
-  .navbar-collapse {
-    animation: fadeIn 0.5s ease;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  /* Estilo Responsive */
-  @media (max-width: 768px) {
-    .navbar-brand {
-      font-size: 1.8rem;
-    }
-  
-    .nav-link {
-      font-size: 1rem;
-    }
-  }
-  
-  /* Fondo de cupcakes (puedes personalizar con una imagen propia) */
-  body {
-    background: url('https://www.facebook.com/escueladepasteleriadulcegustico/') no-repeat center center fixed;
-    background-size: cover;
-  } 
-  
-  /* Scroll suave */
-  html {
-    scroll-behavior: smooth;
-  }
+}
+
+/* Fondo de cupcakes (puedes personalizar con una imagen propia) */
+body {
+  background: url('https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/448156383_10232077935113222_547097834089791207_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gvb3O6BQ-UIQ7kNvgGKYyN3&_nc_oc=AdhqWmHpgcxU-DcspKBhmB0jR3nXGa3Ub7wPzBWAs3ApZMFRxGnBa6pk-z0uu3WqYHYOfYNk7YxV7XbaOo8A87Sq&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=AkbmRAGktYUvT9__diEl4w&oh=00_AYFf4RltGQufZg-5hgarP4qN1m3aim7FDmlwAMKZ51o72g&oe=67DAC2B6') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efectos adicionales para los elementos activos */
+.nav-link.active {
+  color: #fff;
+  background-color: #f85a3e !important;
+  border-radius: 20px;
+}
+
+/* Aumentar el tamaño del icono de la cupcake en el navbar */
+.navbar-toggler-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* Animación de transición suave al hover */
+.navbar-nav .nav-link {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+}
