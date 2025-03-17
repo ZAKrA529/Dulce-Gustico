@@ -9,7 +9,7 @@ const Routing = () => {
     <Routes>
       <Route path="/" element={<Interaz />} />
       <Route path="/productos" element={<Productos />} />
-      <Route path="/products" elemente = {<Products />} />
+
     </Routes>
   );
 };

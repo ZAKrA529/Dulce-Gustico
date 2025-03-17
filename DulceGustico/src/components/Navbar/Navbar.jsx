@@ -10,7 +10,7 @@ function NavigationBar() {
     <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <FaBoxOpen className="me-2" />
+          <img className="DulceGustico" src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/471414918_10234609260914785_6011135909054111669_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rYwv_JYAvjMQ7kNvgGDBzE5&_nc_oc=AdiobUkcq6FsSmDOd0r7t2SzvJEPmIrocgwEiRA_rMcrrGipoinvRfm9Wcg3dIrAEQq6OSusGxS-RVt9zC-OO88W&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=L26xlZdYImb1xiEmvsoKcw&oh=00_AYG83GP7QZxZjGhdk-BFkW3-OpEoYiBOOUC3D092wmpRjA&oe=67DAC0AE" alt="DulceG" />
           Dulce Gustico
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -47,6 +47,10 @@ function NavigationBar() {
             <Nav.Link as={Link} to="/contacto">
               <FaPhoneAlt className="me-2" />
               Contacto
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Login">
+              <FaPhoneAlt className="me-2" />
+              Inicia sesion
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
+import "../Carrusel/carrusel.css"
 
 function Carrusel() {
   const images = [
@@ -11,17 +12,13 @@ function Carrusel() {
     "https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/468834675_18098904820478649_6182255960989241329_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=La-HcMnuyCcQ7kNvgEWuIsq&_nc_oc=AdiVM-tidqnPEDypoX0LRH5jh6QCOjMMgqeTzW6dTPSihdd3ADq7ApmvRU7E1QvTaBv5bqcOjRSPxYbhtHbIcOXZ&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=VrHmAx2IeLjXevxx2hVWkA&oh=00_AYEjDwrpQ9PwCyHXjxw364Pjp2UtBfcLZsMPy7h_RTznrQ&oe=67DAA850",
   ];
   
-  const Hola = "1"
-
   return (
     <Carousel interval={5000} indicators={true} controls={true} fade={true}>
       {images.map((img, index) => (
         <Carousel.Item key={index}>
-          <img
-            className="d-block w-100"
-            src={img}
-            alt={`Imagen ${index + 1}`}
-            style={{ maxHeight: "500px", objectFit: "cover" }}
+          <img className="img"
+            src={img} 
+            alt="Imagen"
           />
         </Carousel.Item>
       ))}
@@ -30,3 +27,5 @@ function Carrusel() {
 }
 
 export default Carrusel;
+
+

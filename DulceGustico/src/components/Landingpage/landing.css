@@ -1,11 +1,11 @@
 /* Estilos generales */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Merriweather', serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #fffaf5;
-  color: #4a4a4a;
+  background: #f8f5f2;
+  color: #333;
 }
 
 /* Contenedor principal */
@@ -15,30 +15,30 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  background: linear-gradient(to right, #f3e5ab, #e3c565);
   padding: 5rem 2rem;
   text-align: center;
-  border-radius: 0 0 50px 50px;
+  margin-top: 30px;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  color: #6a1b9a;
+  color: #5d4037;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
   margin-top: 1rem;
-  color: #7b3f00;
+  color: #8d6e63;
 }
 
 .logo {
-  width: 200px;
+  width: 180px;
   height: auto;
   margin-top: 2rem;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Especialidades */
@@ -47,7 +47,7 @@ body {
 }
 
 .card {
-  border: none;
+  border: 1px solid #ddd;
   border-radius: 20px;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -60,7 +60,7 @@ body {
 .card-img-top {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
-  height: 400px;
+  height: 350px;
 }
 
 .card-body {
@@ -68,14 +68,14 @@ body {
 }
 
 .card-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #6a1b9a;
+  color: #5d4037;
 }
 
 .card-text {
   font-size: 1rem;
-  color: #7b3f00;
+  color: #8d6e63;
 }
 
 .btn-overlay {
@@ -83,7 +83,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   border-radius: 50px;
   padding: 10px 20px;
@@ -92,20 +92,20 @@ body {
 /* Nuestra Historia */
 .history-section {
   padding: 4rem 2rem;
-  background: #ffe5b4;
+  background: #f3e5ab;
   border-radius: 50px;
 }
 
 .history-section h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
-  color: #6a1b9a;
+  color: #5d4037;
 }
 
 /* Testimonios */
 .testimonials-section {
   padding: 4rem 2rem;
-  background: #fff3e0;
+  background: #f8f5f2;
   border-radius: 50px;
 }
 
@@ -117,23 +117,23 @@ body {
 
 .testimonial-card p {
   font-style: italic;
-  color: #7b3f00;
+  color: #8d6e63;
 }
 
 /* Llamado a la acción */
 .cta-section {
   padding: 4rem 2rem;
   text-align: center;
-  background: #ffccbc;
+  background: #e3c565;
 }
 
 .cta-section h2 {
-  font-size: 3rem;
-  color: #6a1b9a;
+  font-size: 2.5rem;
+  color: #5d4037;
 }
 
 .cta-section .btn-primary {
-  background: #6a1b9a;
+  background: #5d4037;
   border: none;
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -142,7 +142,7 @@ body {
 }
 
 .cta-section .btn-primary:hover {
-  background: #4a0072;
+  background: #3e2723;
 }
 
 /* Contacto */
@@ -152,8 +152,8 @@ body {
 }
 
 .contact-section h2 {
-  font-size: 3rem;
-  color: #6a1b9a;
+  font-size: 2.5rem;
+  color: #5d4037;
 }
 
 .contact-form input,
@@ -161,12 +161,12 @@ body {
   width: 80%;
   padding: 1rem;
   margin: 1rem 0;
-  border: 2px solid #6a1b9a;
+  border: 2px solid #5d4037;
   border-radius: 20px;
 }
 
 .contact-form button {
-  background: #6a1b9a;
+  background: #5d4037;
   color: white;
   padding: 1rem 2rem;
   font-size: 1.2rem;
@@ -176,7 +176,7 @@ body {
 }
 
 .contact-form button:hover {
-  background: #4a0072;
+  background: #3e2723;
 }
 
 /* Responsividad */
@@ -190,7 +190,7 @@ body {
   }
 
   .card-img-top {
-    height: 300px;
+    height: 250px;
   }
 
   .btn-overlay {

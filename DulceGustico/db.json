@@ -1,5 +1,8 @@
 {
-    "compras":[],
-    "contacto":[],
-    "Productos":[] 
+  "compras": [],
+  "contacto": [],
+  "Productos": [],
+  "registro": [
+
+  ]
 }
