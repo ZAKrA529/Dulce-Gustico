@@ -10,6 +10,8 @@ function Carrusel() {
     "https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/468784864_18098905702478649_985823364740893769_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Wa9Aq-0wnJoQ7kNvgHQCvxT&_nc_oc=AdjCS09IOZogr5KWxWCoDenT6nWhjlxnT31xcZ7L3ILPFb_yvqTCn5txNefGgTr4A0vbPpAmsGlSVZgCPrhd6MDL&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=peRvNQf52Gr2WFoV-Qfj-Q&oh=00_AYEqE7cjc-00ZdVn8qy-7HxXgHulWJwLWfFkdRKmnTabEw&oe=67DAA265",
     "https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/468834675_18098904820478649_6182255960989241329_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=La-HcMnuyCcQ7kNvgEWuIsq&_nc_oc=AdiVM-tidqnPEDypoX0LRH5jh6QCOjMMgqeTzW6dTPSihdd3ADq7ApmvRU7E1QvTaBv5bqcOjRSPxYbhtHbIcOXZ&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=VrHmAx2IeLjXevxx2hVWkA&oh=00_AYEjDwrpQ9PwCyHXjxw364Pjp2UtBfcLZsMPy7h_RTznrQ&oe=67DAA850",
   ];
+  
+  const Hola = "1"
 
   return (
     <Carousel interval={5000} indicators={true} controls={true} fade={true}>
