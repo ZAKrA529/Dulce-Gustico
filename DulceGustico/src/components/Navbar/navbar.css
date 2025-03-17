@@ -5,12 +5,16 @@
   background: linear-gradient(135deg, #fbd3e9, #f7a1c4); /* Degradado pastel */
   font-family: 'Pacifico', cursive; /* Fuente cursiva para estilo dulce */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fijar el navbar en la pantalla */
+  width: 100%; /* Asegurar que el navbar ocupe todo el ancho de la pantalla */
+  top: 0; /* Posicionarlo en la parte superior */
+  z-index: 1000; /* Asegurar que el navbar esté por encima de otros elementos */
 }
 
 /* Logo de la marca */
 .navbar-brand {
   color: #8b5a7d !important; /* Color marrón pastel */
-  font-size: 2rem; /* Más grande para destacar */
+  font-size: 2.2rem; /* Más grande para destacar */
   transition: transform 0.3s ease;
 }
 
@@ -21,14 +25,14 @@
 /* Links del Navbar */
 .nav-link {
   color: #ff6b81 !important; /* Rosa pastel */
-  margin: 0 10px;
-  font-size: 1.2rem;
+  margin: 0 11px;
+  font-size: 1.32rem;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
   color: #f85a3e !important; /* Rojo más vibrante al pasar el cursor */
-  text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.8); /* Sombras para resaltar */
+  text-shadow: 1.1px 1.1px 2.2px rgba(255, 182, 193, 0.8); /* Sombras para resaltar */
 }
 
 /* Icono del dropdown */
@@ -38,15 +42,15 @@
 
 /* Botón de colapso (menú móvil) */
 .navbar-toggler {
-  border: 2px solid #f85a3e;
+  border: 2.2px solid #f85a3e;
 }
 
 .navbar-toggler-icon {
   background-image: url('https://cdn-icons-png.flaticon.com/512/3342/3342137.png'); /* Icono de cupcake */
   background-size: contain;
   background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
+  height: 33px;
+  width: 33px;
 }
 
 /* Animación al desplegar el menú */
@@ -66,11 +70,11 @@
 /* Estilo Responsive */
 @media (max-width: 768px) {
   .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 1.98rem;
   }
 
   .nav-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -91,13 +95,13 @@ html {
 .nav-link.active {
   color: #fff;
   background-color: #f85a3e !important;
-  border-radius: 20px;
+  border-radius: 22px;
 }
 
 /* Aumentar el tamaño del icono de la cupcake en el navbar */
 .navbar-toggler-icon {
-  width: 35px;
-  height: 35px;
+  width: 38.5px;
+  height: 38.5px;
 }
 
 /* Animación de transición suave al hover */

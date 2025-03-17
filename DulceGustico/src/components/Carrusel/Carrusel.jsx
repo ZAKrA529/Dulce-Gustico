@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./carrusel.css";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Carousel } from "react-bootstrap";
 
 function Carrusel() {
   const images = [
@@ -10,25 +11,19 @@ function Carrusel() {
     "https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/468834675_18098904820478649_6182255960989241329_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=La-HcMnuyCcQ7kNvgEWuIsq&_nc_oc=AdiVM-tidqnPEDypoX0LRH5jh6QCOjMMgqeTzW6dTPSihdd3ADq7ApmvRU7E1QvTaBv5bqcOjRSPxYbhtHbIcOXZ&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=VrHmAx2IeLjXevxx2hVWkA&oh=00_AYEjDwrpQ9PwCyHXjxw364Pjp2UtBfcLZsMPy7h_RTznrQ&oe=67DAA850",
   ];
 
-  const [current, setCurrent] = useState(0);
-  const length = images.length;
-
-  // Función para avanzar al siguiente slide
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % length);
-  const prevSlide = () => setCurrent((prev) => (prev - 1 + length) % length);
-
-  // Autoavance cada 5 segundos
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval); // Limpieza al desmontar el componente
-  }, [current]); 
-
   return (
-    <div className="carousel">
-      <button onClick={prevSlide} className="btn prev">❮</button>
-      <img src={images[current]} alt={`Imagen ${current + 1}`} className="carousel-image" />
-      <button onClick={nextSlide} className="btn next">❯</button>
-    </div>
+    <Carousel interval={5000} indicators={true} controls={true} fade={true}>
+      {images.map((img, index) => (
+        <Carousel.Item key={index}>
+          <img
+            className="d-block w-100"
+            src={img}
+            alt={`Imagen ${index + 1}`}
+            style={{ maxHeight: "500px", objectFit: "cover" }}
+          />
+        </Carousel.Item>
+      ))}
+    </Carousel>
   );
 }
 

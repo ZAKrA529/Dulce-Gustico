@@ -20,17 +20,17 @@ function Landing() {
 
           {[
             {
-              img: "https://i.pinimg.com/736x/8f/33/57/8f335736c5b9bc5c23ec32d907c092a1.jpg",
-              title: "Cupcakes Personalizados",
+              img: "https://i.pinimg.com/736x/ce/91/e9/ce91e9c75eee7226085bc8f0ee10e227.jpg",
+              title: "Almuerzos y cenas",
               text: "Perfectos para cualquier ocasión especial."
             },
             {
               img: "https://i.pinimg.com/736x/bb/73/a0/bb73a00e4da3684323795d47f2f2dd11.jpg",
-              title: "Tortas Artesanales",
+              title: "Queques artesanales",
               text: "Sabores únicos y diseño exclusivo para ti."
             },
             {
-              img: "https://i.pinimg.com/736x/c3/a7/75/c3a77567c61aaa7bb8111ac223d49547.jpg",
+              img: "https://i.pinimg.com/736x/56/7e/c9/567ec944b35890496e09b3533941ebda.jpg",
               title: "Clases de Pastelería",
               text: "Aprende con nuestros expertos y desarrolla tus habilidades."
             }
