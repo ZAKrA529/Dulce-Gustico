@@ -7,7 +7,7 @@ import Swal from "sweetalert2"
 function LoginC() {
 
   const [nombre, setNombre]=useState("")
-  const [apellido, setApellido]=useState("")
+
   const [correoE, setCorreo]=useState("")
   const [Contrasena, setContrasena]=useState("")
 
@@ -15,9 +15,7 @@ function LoginC() {
     setNombre(e.target.value)
   }
 
-  function inputApellido (e) {
-    setApellido(e.target.value)
-  }
+
 
   function inputCorreo (e) {
     setCorreo(e.target.value)
@@ -28,14 +26,14 @@ function LoginC() {
   }
 
   function  registrar() {
-    if (!nombre.trim() || !apellido.trim() || !correoE.trim() || !Contrasena.trim() ){
+    if (!nombre.trim() || !correoE.trim() || !Contrasena.trim() ){
       Swal.fire({
         title: "Ingresa tus datos",
         icon: "error",
         draggable: true
       });
     } else {
-      registro.PostUser(nombre, apellido, correoE, Contrasena)
+      registro.PostUser(nombre.trim(), correoE.trim(), Contrasena.trim())
       Swal.fire({
         title: "registro exitoso",
         icon: "success",
@@ -53,8 +51,6 @@ function LoginC() {
         <label htmlFor="">Nombre</label><br />
         <input type="text"  value={nombre} on onChange={inputNombre}/><br />
 
-        <label htmlFor="">Apellido</label><br />
-        <input value={apellido} onChange={inputApellido} type="text" /><br />
 
         <label htmlFor="">Correo Electronico</label><br />
         <input type="email" value={correoE} onChange={inputCorreo} /><br />
@@ -62,7 +58,7 @@ function LoginC() {
         <label htmlFor="">Contraseña</label><br />
         <input type="password" name='userpaswword' value={Contrasena} onChange={inputContrasena} /><br />
         
-        <p>¿Ya iniciaste sesión<a href="RegisterC">Iniciar sesión</a></p>
+        <p>¿Ya iniciaste sesión<a href="Login">Iniciar sesión</a></p>
         
         <button onClick={registrar}>Registrar</button>
         

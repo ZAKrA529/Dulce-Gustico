@@ -30,7 +30,7 @@ function RegisterC() {
         draggable: true
       });
     } else {
-      registro.PostUser(nombre, correoE, Contrasena)
+      registro.PostUser(!nombre.trim(), !correoE.trim(), !Contrasena.trim())
       Swal.fire({
         title: "registro exitoso",
         icon: "success",
@@ -54,7 +54,7 @@ function RegisterC() {
         <label htmlFor="">Contraseña</label><br />
         <input type="password" name='userpaswword' value={Contrasena} onChange={inputContrasena} /><br />
         
-        <p>¿Ya iniciaste sesión<a href="#">Iniciar sesión</a></p>
+        <p>¿Ya iniciaste sesión<a href="Registro">Iniciar sesión</a></p>
         
         <button onClick={registrar}>Registrar</button>
         
