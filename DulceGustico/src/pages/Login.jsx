@@ -1,10 +1,10 @@
 import React from 'react'
-import LoginC from '../'
+import LoginC from '../components/Login/LoginC'
 
 export default function Login() {
   return (
     <div>
-      <LoginC></LoginC>
+      <LoginC/>
     </div>
   )
 }

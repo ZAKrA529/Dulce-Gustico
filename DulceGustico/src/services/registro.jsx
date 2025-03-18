@@ -18,7 +18,9 @@ async function GetUser() {
     }
 }
 
-async function PostUser(userData) {
+async function PostUser(nombreCompleto, correoE, Contrasena) {
+
+    const userData = {nombreCompleto, correoE, Contrasena};
     try {
 
         const response = await fetch("http://localhost:3003/registro", {
@@ -40,9 +42,9 @@ async function PostUser(userData) {
     }
 }
 
-async function Updateuser(nombre, correo, constrasena, id) {
+async function Updateuser(id) {
     try {
-        const userData = {nombre, correo, constrasena, id };
+        const userData = { id };
 
         const response = await fetch(`http://localhost:3003/registro/${id}`, {
             method: 'PUT',

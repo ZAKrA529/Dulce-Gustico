@@ -3,6 +3,18 @@
   "contacto": [],
   "Productos": [],
   "registro": [
-
+    {
+      "id": "b0b2",
+      "nombre": "1dw",
+      "apellido": "wee",
+      "correoE": "qweq@we",
+      "Contrasena": "122"
+    },
+    {
+      "id": "71e7",
+      "nombre": "da",
+      "correoE": "da",
+      "Contrasena": "da@gda"
+    }
   ]
 }
