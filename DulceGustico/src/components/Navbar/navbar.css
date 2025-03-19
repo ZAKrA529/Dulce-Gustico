@@ -1,24 +1,23 @@
-/* Efecto de hover para el navbar */
+
 .navbar:hover {
   background-color: #3c4147; /* Cambiar el color de fondo al pasar el ratón */
 }
 
-/* Efecto de hover para los links del navbar */
+
+
 .nav-link:hover {
-  color: #ffffff !important; /* Cambiar el color del texto al pasar el ratón */
-  background-color: #495057; /* Añadir un fondo gris oscuro al pasar el ratón */
-  border-radius: 5px; /* Bordes redondeados */
-  transform: scale(1.1); /* Aumentar ligeramente el tamaño */
+  color: #ffffff !important; 
+  background-color: #495057; 
+  border-radius: 5px; 
+  transform: scale(1.1); 
 }
 
-/* Efecto de hover para el logo de la marca */
 .navbar-brand:hover {
   transform: scale(1.1); /* Aumentar ligeramente el tamaño */
-  color: #ff00b3 !important; /* Cambiar el color del texto al pasar el ratón */
+/
 }
 
 .DulceGustico{
   width: 50px;
   border-radius: 50%;
-  
 }

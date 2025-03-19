@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Landing.css';
+import './landing.css';
 
 function Landing() {
   return (
@@ -13,42 +13,9 @@ function Landing() {
         <img src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/471414918_10234609260914785_6011135909054111669_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rYwv_JYAvjMQ7kNvgGDBzE5&_nc_oc=AdiobUkcq6FsSmDOd0r7t2SzvJEPmIrocgwEiRA_rMcrrGipoinvRfm9Wcg3dIrAEQq6OSusGxS-RVt9zC-OO88W&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=L26xlZdYImb1xiEmvsoKcw&oh=00_AYG83GP7QZxZjGhdk-BFkW3-OpEoYiBOOUC3D092wmpRjA&oe=67DAC0AE" alt="DulceGustico" className='logo'/>
       </header>
 
-      {/* Sección de Especialidades */}
-      <section className="specialties-section container py-5">
-        <h2 className="text-center mb-4">Productos más destacados</h2>
-        <div className="row">
-
-          {[
-            {
-              img: "https://i.pinimg.com/736x/ce/91/e9/ce91e9c75eee7226085bc8f0ee10e227.jpg",
-              title: "Almuerzos y cenas",
-              text: "Perfectos para cualquier ocasión especial."
-            },
-            {
-              img: "https://i.pinimg.com/736x/bb/73/a0/bb73a00e4da3684323795d47f2f2dd11.jpg",
-              title: "Queques artesanales",
-              text: "Sabores únicos y diseño exclusivo para ti."
-            },
-            {
-              img: "https://i.pinimg.com/736x/56/7e/c9/567ec944b35890496e09b3533941ebda.jpg",
-              title: "Clases de Pastelería",
-              text: "Aprende con nuestros expertos y desarrolla tus habilidades."
-            }
-          ].map((item, index) => (
-            <div className="col-md-4 mb-4" key={index}>
-              <div className="card h-100 shadow-sm position-relative">
-                <img src={item.img} className="card-img-top" alt={item.title} />
-                <div className="card-body">
-                  <h3 className="card-title">{item.title}</h3>
-                  <p className="card-text">{item.text}</p>
-                </div>
-                <button className="btn btn-dark position-absolute top-50 start-50 translate-middle">Ver más</button>
-              </div>
-            </div>
-          ))}
-
-        </div>
-      </section>
+    
+          
+       
 
       {/* Sección: Nuestra Historia */}
       <section className="about-section bg-light py-5">
