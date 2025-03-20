@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
-import "../Carrusel/carrusel.css"
+import "./carrusel.css"
 
 function Carrusel() {
   const images = [

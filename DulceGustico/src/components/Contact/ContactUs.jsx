@@ -23,7 +23,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='Gmail'>
       <form ref={form} onSubmit={sendEmail}>
       <label className='labels'>Name</label><br />
       <input type="text" name="user_name" /><br />
