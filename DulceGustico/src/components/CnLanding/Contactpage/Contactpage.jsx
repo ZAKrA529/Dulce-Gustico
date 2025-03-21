@@ -19,8 +19,14 @@ function Contactpage() {
 
             {/* Contact Form Section */}
             <div className='FormularioContacto'>
-                <h1>Tambien puedes comunicarte a los siguientes numeros</h1><br />
-                <h3>+506 6007 1606 Don Alexander Mata León</h3>
+                <h1>¿Querés saber más formas de comunicarte con nosotros?</h1><br />
+                <h3>Aquí tenes diferentes metodos para comunicarte con nosotros</h3><br />
+                <ul className='Contactenos'>
+                    <li>Numeros telefonicos <br />: # / #</li><br />
+                    <li>Correo electronico de nuestra empresa: <br />      dulcegustico@gmail.com</li><br />
+                    <p>Tambien te dejamos donde estamos ubicados</p>
+                    <li>$</li>
+                </ul>
 
             <ContactUs></ContactUs>
             </div>

@@ -1,63 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel, Card, Button, Row, Col } from 'react-bootstrap';
 import './Products.css';
 
-const productCategories = [
-  {
-    title: 'Queques',
-    products: [
-      { title: 'Queque de Fresa', text: 'Delicioso queque de fresa con cobertura cremosa.', img: 'https://via.placeholder.com/300x200' },
-      { title: 'Queque de Chocolate', text: 'Queque de chocolate esponjoso con glaseado de cacao.', img: 'https://via.placeholder.com/300x200' },
-      { title: 'Queque de Vainilla', text: 'Suave queque de vainilla con un toque de crema.', img: 'https://via.placeholder.com/300x200' },
-    ],
-  },
-  {
-    title: 'Cupcakes',
-    products: [
-      { title: 'Cupcake de Fresa', text: 'Cupcake de fresa con un toque de crema de mantequilla.', img: 'https://via.placeholder.com/300x200' },
-      { title: 'Cupcake de Chocolate', text: 'Cupcake de chocolate con glaseado de vainilla.', img: 'https://via.placeholder.com/300x200' },
-      { title: 'Cupcake Red Velvet', text: 'Cupcake Red Velvet con glaseado de queso crema.', img: 'https://via.placeholder.com/300x200' },
-    ],
-  },
-  {
-    title: 'Almuerzos',
-    products: [
-      { title: 'Ensalada César', text: 'Ensalada fresca con aderezo César y pollo a la parrilla.', img: 'https://via.placeholder.com/300x200' },
-      { title: 'Hamburguesa Artesanal', text: 'Hamburguesa artesanal con papas fritas caseras.', img: 'https://via.placeholder.com/300x200' },
-      { title: 'Wrap de Pollo', text: 'Wrap de pollo con verduras frescas y salsa de yogur.', img: 'https://via.placeholder.com/300x200' },
-    ],
-  },
+const productData = [
+  { id: 1, title: 'Producto 1', description: 'Hola', image: 'https://via.placeholder.com/150' },
+  { id: 2, title: 'Producto 2', description: 'Descripción del producto 2', image: 'https://via.placeholder.com/150' },
+  { id: 3, title: 'Producto 3', description: 'Descripción del producto 3', image: 'https://via.placeholder.com/150' },
+  { id: 4, title: 'Producto 4', description: 'Descripción del producto 4', image: 'https://via.placeholder.com/150' },
+  { id: 5, title: 'Producto 5', description: 'Descripción del producto 5', image: 'https://via.placeholder.com/150' },
+  { id: 6, title: 'Producto 6', description: 'Descripción del producto 6', image: 'https://via.placeholder.com/150' },
+  { id: 7, title: 'Producto 7', description: 'Descripción del producto 7', image: 'https://via.placeholder.com/150' },
+  { id: 8, title: 'Producto 8', description: 'Descripción del producto 8', image: 'https://via.placeholder.com/150' },
+  { id: 9, title: 'Producto 9', description: 'Descripción del producto 9', image: 'https://via.placeholder.com/150' },
+  { id: 10, title: 'Producto 10', description: 'Descripción del producto 10', image: 'https://via.placeholder.com/150' },
+  { id: 11, title: 'Producto 11', description: 'Descripción del producto 11', image: 'https://via.placeholder.com/150' },
+  { id: 12, title: 'Producto 12', description: 'Descripción del producto 12', image: 'https://via.placeholder.com/150' },
 ];
 
-const ProductCard = ({ title, text, img }) => (
-  <Col md={4} className="mb-4">
-    <Card className="product-card">
-      <Card.Img variant="top" src={img} alt={title} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{text}</Card.Text>
-        <Button variant="primary">Ver más</Button>
-      </Card.Body>
-    </Card>
-  </Col>
-);
-
 function Products() {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleShowDescription = (product) => {
+    setSelectedProduct(selectedProduct === product.id ? null : product.id);
+  };
+
   return (
-    <div className="container my-5">
-      <h2 className="text-center mb-4">Productos Destacados</h2>
-      <Carousel>
-        {productCategories.map((category, index) => (
-          <Carousel.Item key={index}>
-            <Row className="justify-content-center">
-              {category.products.map((product, idx) => (
-                <ProductCard key={idx} {...product} />
-              ))}
-            </Row>
-          </Carousel.Item>
+    <div className="container text-center">
+      <div className="row">
+        {productData.map((product) => (
+          <div key={product.id} className="col-md-3 mb-4">
+            <div className="card">
+              <img
+                src={product.image}
+                alt={product.title}
+                className="card-img-top"
+              />
+              <div className="card-body">
+                <h5 className="card-title">{product.title}</h5>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => handleShowDescription(product)}
+                >
+                  Ver más
+                </button>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => handleShowDescription(product)}
+                >
+                  Añadir al carrito
+                </button>
+                {selectedProduct === product.id && (
+                  <div className="mt-3">
+                    <p>{product.description}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 }

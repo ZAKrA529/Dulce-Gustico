@@ -42,9 +42,9 @@ async function PostUser(nombre,  correoE, Contrasena) {
     }
 }
 
-async function Updateuser(Nombre,Cedula,Contrasena,id) {
+async function Updateuser(nombre,  correoE, Contrasena,id) {
     try {
-        const userData = {Nombre,Cedula,Contrasena, id };
+        const userData = {nombre,  correoE, Contrasena, id };
 
         const response = await fetch(`http://localhost:3003/registro/${id}`, {
             method: 'PUT',

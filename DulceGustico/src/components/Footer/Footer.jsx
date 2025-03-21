@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import './footer.css';
+import ContactUs from "../CnLanding/Contactpage/Contact/ContactUs"
 
 function Footer() {
     return (
@@ -10,26 +11,11 @@ function Footer() {
                 <div className="row">
 
                     {/* Información de Contacto */}
-                    <div className="col-md-6 mb-4 mb-md-0">
-                        <h3 className="footer-title">Contáctanos</h3>
-                        <form>
-                            <div className="mb-3">
-                                <label htmlFor="name" className="form-label">Nombre</label>
-                                <input type="text" className="form-control" id="name" placeholder="Tu nombre" />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="email" className="form-label">Correo Electrónico</label>
-                                <input type="email" className="form-control" id="email" placeholder="correo@ejemplo.com" />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="message" className="form-label">Mensaje</label>
-                                <textarea className="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
-                            </div>
+                    
+                    <ContactUs></ContactUs>
                             
                             
-                        </form>
-                    </div>
-
+                        
                     {/* Redes Sociales */}
                     <div className="col-md-6 d-flex flex-column align-items-md-end align-items-center">
                         <h3 className="footer-title">Síguenos en nuestras redes</h3>

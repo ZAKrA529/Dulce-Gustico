@@ -29,7 +29,7 @@ export const ContactUs = () => {
 Swal.fire({
   title: "Auto close alert!",
   html: "I will close in <b></b> milliseconds.",
-  timer: 2000,
+  timer: 1,
   timerProgressBar: true,
   didOpen: () => {
     Swal.showLoading();

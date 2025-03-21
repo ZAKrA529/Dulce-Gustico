@@ -8,6 +8,18 @@
       "nombre": "hola             .",
       "correoE": "medina@gamil.com",
       "Contrasena": "1111"
+    },
+    {
+      "id": "345b",
+      "nombre": "Daniel",
+      "correoE": "medina@gmail.com",
+      "Contrasena": "111"
+    },
+    {
+      "id": "a388",
+      "nombre": "Prueba1",
+      "correoE": "prueb1@gmail.com",
+      "Contrasena": "1234"
     }
   ]
 }

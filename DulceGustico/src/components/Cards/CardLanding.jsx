@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './CardL.css'
+
 
 function CardLanding() {
   const [selectedCake, setSelectedCake] = useState(null);
@@ -9,21 +11,21 @@ function CardLanding() {
       id: 1,
       name: 'Pastel de Chocolate',
       description: 'Delicioso pastel con cobertura de chocolate belga.',
-      image: 'https://via.placeholder.com/300x200',
+      image: 'https://i.pinimg.com/474x/7c/16/87/7c168755ad861d2f522b1de85f49497e.jpg',
       details: 'Este pastel está elaborado con cacao 100% puro y una receta secreta que garantiza una experiencia única.'
     },
     {
       id: 2,
       name: 'Cheesecake de Fresa',
       description: 'Suave cheesecake con una capa de fresas frescas.',
-      image: 'https://via.placeholder.com/300x200',
+      image: 'https://i.pinimg.com/736x/7a/fc/3e/7afc3ede9e1506b5f1b610bf8eb94e66.jpg',
       details: 'Un postre cremoso con base de galleta y una mermelada de fresa casera.'
     },
     {
       id: 3,
       name: 'Tarta de Limón',
       description: 'Refrescante tarta con crema de limón natural.',
-      image: 'https://via.placeholder.com/300x200',
+      image: 'https://i.pinimg.com/736x/20/dd/7b/20dd7bbd6dd51212a9025f72ecb56684.jpg',
       details: 'Perfecto equilibrio entre dulzura y acidez, con un toque de merengue tostado.'
     }
   ];
@@ -43,7 +45,7 @@ function CardLanding() {
         {cakes.map((cake) => (
           <div key={cake.id} className="col-md-4 mb-4">
             <div className="card">
-              <img src={cake.image} className="card-img-top" alt={cake.name} />
+              <img src={cake.image} className="imagenCard card-img-top" alt={cake.name} />
               <div className="card-body">
                 <h5 className="card-title">{cake.name}</h5>
                 <p className="card-text">{cake.description}</p>

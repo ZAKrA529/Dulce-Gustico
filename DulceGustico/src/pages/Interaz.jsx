@@ -14,7 +14,7 @@ function Interaz() {
       <Navbar/>
       <Carrusel/>
       <Landing/>
-      <CardLanding></CardLanding>
+      <CardLanding/><br />
       <Footer/>
 
     </div>  
