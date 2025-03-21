@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import registro from '../../services/registro';
 import Swal from 'sweetalert2';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import UserNavP from './UserNavP';
 
 function UserP() {
   const [usuarios, setUsuarios] = useState([]);
   const [nuevoUsuario, setNuevoUsuario] = useState({ nombre: '', correoE: '', Contrasena: '' });
+  const [editandoUsuario, setEditandoUsuario] = useState(null); // Identifica si se está editando un usuario
 
   useEffect(() => {
     async function fetchUsuarios() {
@@ -24,16 +26,28 @@ function UserP() {
     fetchUsuarios();
   }, []);
 
-  async function eliminarUsuario(id) {
-    try {
-      await registro.DeleteUser(id);
-      setUsuarios(usuarios.filter(usuario => usuario.id !== id));
-      Swal.fire('Usuario eliminado', '', 'success');
-    } catch {
-      Swal.fire('Error al eliminar', '', 'error');
-    }
-  }
+   // Función para eliminar un usuario
+   const eliminarUsuario = async (id) => {
+    const confirmacion = await Swal.fire({
+      title: '¿Estás seguro?',
+      text: 'Esta acción no se puede deshacer.',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sí, eliminar',
+      cancelButtonText: 'Cancelar'
+    });
 
+    if (confirmacion.isConfirmed) {
+      try {
+        await registro.DeleteUser(id); // Llama al DELETE para eliminar un usuario
+        setUsuarios(usuarios.filter((usuario) => usuario.id !== id)); // Filtra y actualiza la lista excluyendo el usuario eliminado
+        Swal.fire('Eliminado', 'Usuario eliminado correctamente.', 'success');
+      } catch {
+        Swal.fire('Error', 'No se pudo eliminar el usuario.', 'error');
+      }
+    }
+  };
+   // Función para agregar un nuevo usuario
   async function agregarUsuario() {
     if (!nuevoUsuario.nombre || !nuevoUsuario.correoE || !nuevoUsuario.Contrasena) {
       Swal.fire('Por favor, completa todos los campos', '', 'warning');
@@ -50,15 +64,24 @@ function UserP() {
     }
   }
 
-  async function editarUsuario(id, nombre, correoE) {
+  // Función para guardar los cambios al editar un usuario 
+  const guardarEdicion = async () => {
     try {
-      await registro.Updateuser(nombre, correoE, id);
-      setUsuarios(usuarios.map(user => (user.id === id ? { ...user, nombre, correoE } : user)));
-      Swal.fire('Usuario actualizado', '', 'success');
+      await registro.Updateuser(editandoUsuario.id, nuevoUsuario); 
+      setUsuarios(
+        usuarios.map((usuario) =>
+          usuario.id === editandoUsuario.id ? { ...usuario, ...nuevoUsuario } : usuario
+        )
+      ); // Actualiza la lista de usuarios con los nuevos datos
+      Swal.fire('Actualizado', 'Usuario actualizado correctamente.', 'success');
+      setEditandoUsuario(null); // Limpia el estado de edición
+      setNuevoUsuario({ nombre: '', correoE: '', Contrasena: '' }); // Limpia el formulario
     } catch {
-      Swal.fire('Error al actualizar usuario', '', 'error');
+      Swal.fire('Error', 'No se pudo actualizar el usuario.', 'error');
     }
-  }
+  };
+
+
 
   return (
     <div className="container mt-5">
@@ -109,7 +132,7 @@ function UserP() {
                     type="text"
                     value={usuario.nombre}
                     className="form-control"
-                    onChange={(e) => editarUsuario(usuario.id, e.target.value, usuario.correoE)}
+                    onChange={(e) => guardarEdicion(usuario.id, e.target.value, usuario.correoE)}
                   />
                 </td>
                 <td>
@@ -117,7 +140,7 @@ function UserP() {
                     type="email"
                     value={usuario.correoE}
                     className="form-control"
-                    onChange={(e) => editarUsuario(usuario.id, usuario.nombre, e.target.value)}
+                    onChange={(e) => guardarEdicion(usuario.id, usuario.nombre, e.target.value)}
                   />
                 </td>
                 <td>

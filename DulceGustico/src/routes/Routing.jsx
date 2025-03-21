@@ -7,11 +7,6 @@ import Admin from "../pages/Admin";
 import Contacto from "../pages/Contacto";
 import UserPageC from "../pages/UserPageC";
 
-
-
-
-
-
 const Routing = () => {
   return (
     <Routes>

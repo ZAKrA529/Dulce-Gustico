@@ -4,28 +4,16 @@
   "Productos": [],
   "registro": [
     {
-      "id": "273a",
-      "nombre": "hola             .",
-      "correoE": "medina@gamil.com",
+      "id": "83c1",
+      "nombre": "Pruebaaaaaaaaaaaaaaaaaaa                                 .",
+      "correoE": "prueba@gmail.com",
       "Contrasena": "1111"
     },
     {
-      "id": "345b",
-      "nombre": "Daniel",
-      "correoE": "medina@gmail.com",
-      "Contrasena": "111"
-    },
-    {
-      "id": "a388",
-      "nombre": "Prueba1",
-      "correoE": "prueb1@gmail.com",
-      "Contrasena": "1234"
-    },
-    {
-      "id": "458a",
+      "id": "64b9",
       "nombre": "Prueba2",
       "correoE": "prueba2@gmail.com",
-      "Contrasena": "222"
+      "Contrasena": "111"
     }
   ]
 }
