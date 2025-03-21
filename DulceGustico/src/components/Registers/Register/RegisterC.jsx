@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import registro from '../../services/registro'
+import registro from '../../../services/registro'
 import Swal from "sweetalert2"
 
 

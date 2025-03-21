@@ -1,10 +1,12 @@
 import React from 'react'
-import ContactUs from '../components/Contact/ContactUs'
+import Contactpage from '../components/CnLanding/Contactpage/Contactpage'
+
 
 function Contacto() {
   return (
     <div>
-      <ContactUs/>
+      <Contactpage/>
+
     </div>
   )
 }

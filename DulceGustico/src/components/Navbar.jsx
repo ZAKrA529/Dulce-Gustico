@@ -1,4 +1,4 @@
-import { FaHome, FaCogs, FaUser, FaPhoneAlt, FaSignInAlt } from "react-icons/fa";
+import { FaHome, FaUser, FaPhoneAlt, FaSignInAlt, FaBoxOpen } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 
@@ -11,6 +11,8 @@ function NavigationBar() {
             className="DulceGustico"
             src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/471414918_10234609260914785_6011135909054111669_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rYwv_JYAvjMQ7kNvgGDBzE5&_nc_oc=AdiobUkcq6FsSmDOd0r7t2SzvJEPmIrocgwEiRA_rMcrrGipoinvRfm9Wcg3dIrAEQq6OSusGxS-RVt9zC-OO88W&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=L26xlZdYImb1xiEmvsoKcw&oh=00_AYG83GP7QZxZjGhdk-BFkW3-OpEoYiBOOUC3D092wmpRjA&oe=67DAC0AE"
             alt="Dulce Gustico"
+            width="30"
+            height="30"
           />
           Dulce Gustico
         </a>
@@ -37,7 +39,7 @@ function NavigationBar() {
 
             <li className="nav-item">
               <a className="nav-link" href="/productos">
-                <FaCogs className="me-2" /> Servicios
+                <FaBoxOpen className="me-2" /> Productos 
               </a>
             </li>
 
@@ -59,6 +61,17 @@ function NavigationBar() {
               </a>
             </li>
           </ul>
+          <form className="d-flex ms-3" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </nav>

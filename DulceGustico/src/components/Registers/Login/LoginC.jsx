@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import registro from '../../services/registro';
+import registro from '../../../services/registro';
 import Swal from 'sweetalert2';
 import { FaUser, FaSignInAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';

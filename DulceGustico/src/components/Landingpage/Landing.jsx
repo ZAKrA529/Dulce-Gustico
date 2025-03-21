@@ -11,9 +11,9 @@ function Landing() {
         <h1 className="hero-title">Bienvenidos a Dulce Gustico</h1>
         <p className="hero-subtitle">Más de 15 años endulzando los corazones de Puntarenas</p>
         <img 
-          src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/471414918_10234609260914785_6011135909054111669_n.jpg" 
+          src="https://scontent.fsjo7-1.fna.fbcdn.net/v/t1.6435-9/120363501_10223197542948968_6161840330648549637_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=w6ZtgYa0_EMQ7kNvgFfDG92&_nc_oc=AdlNOwYei9HdSAhilqJST5f8fyt5un-n9sL9XoXOyf0Ku6jlkpCHRsSyLz29AukUY1HDrk-IufN-F7xa3WWJ3VA4&_nc_zt=23&_nc_ht=scontent.fsjo7-1.fna&_nc_gid=XHs1GrYVCHHQdMNRMvOYng&oh=00_AYHjhwpwTwTSnR6_4KSiSN_H8fEY9-beh6JSBi38rGjGXg&oe=68044B23" 
           alt="Dulce Gustico" 
-          className='logo img-fluid rounded-circle mt-4' 
+          className='logo img-fluid rounded-circle-2 mt-2 w-25 border border-4 border-dark rounded-2' 
         />
       </header>
 
