@@ -4,7 +4,8 @@ import RegisterC from '../components/Register/RegisterC'
 function Registro() {
   return (
     <div>
-      <RegisterC></RegisterC>
+      <RegisterC/>
+      
     </div>
   )
 }

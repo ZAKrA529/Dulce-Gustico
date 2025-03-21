@@ -5,27 +5,25 @@ import { FaUser, FaSignInAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RiLockPasswordFill } from 'react-icons/ri';
 
-
-
 function LoginC() {
   const [nombre, setNombre] = useState('');
   const [correoE, setCorreo] = useState('');
   const [Contrasena, setContrasena] = useState('');
 
   function inputNombre(e) {
-    setNombre(e.target.value);
+    setNombre(e.target.value.trim());
   }
 
   function inputCorreo(e) {
-    setCorreo(e.target.value);
+    setCorreo(e.target.value.trim());
   }
 
   function inputContrasena(e) {
-    setContrasena(e.target.value);
+    setContrasena(e.target.value.trim());
   }
 
   function registrar() {
-    if (!nombre.trim() || !correoE.trim() || !Contrasena.trim()) {
+    if (!nombre || !correoE || !Contrasena) {
       Swal.fire({
         title: 'Ingresa tus datos',
         icon: 'error',
@@ -34,7 +32,7 @@ function LoginC() {
       return;
     }
 
-    registro.PostUser(nombre.trim(), correoE.trim(), Contrasena.trim());
+    registro.PostUser(nombre, correoE, Contrasena);
     Swal.fire({
       title: 'Registro exitoso',
       icon: 'success',

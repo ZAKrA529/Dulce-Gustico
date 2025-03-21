@@ -4,88 +4,10 @@
   "Productos": [],
   "registro": [
     {
-      "id": "b0b2",
-      "nombre": "1dw",
-      "apellido": "wee",
-      "correoE": "qweq@we",
-      "Contrasena": "122"
-    },
-    {
-      "id": "71e7",
-      "nombre": "da",
-      "correoE": "da",
-      "Contrasena": "da@gda"
-    },
-    {
-      "id": "df98",
-      "nombreCompleto": "Allan Jose",
-      "correoE": "aassa",
-      "Contrasena": "allan@gmail.com"
-    },
-    {
-      "id": "6b27",
-      "nombre": "q",
-      "apellido": "w",
-      "correoE": "qw@",
+      "id": "273a",
+      "nombre": "hola             .",
+      "correoE": "medina@gamil.com",
       "Contrasena": "1111"
-    },
-    {
-      "id": "f649",
-      "nombre": "allan  jose                       .",
-      "correoE": "allan@",
-      "Contrasena": "111"
-    },
-    {
-      "id": "929a",
-      "nombre": "q",
-      "correoE": "qqq@",
-      "Contrasena": "qqq"
-    },
-    {
-      "id": "65a2",
-      "nombre": "q",
-      "correoE": "qqq@",
-      "Contrasena": "qqq                      ...."
-    },
-    {
-      "id": "2011",
-      "nombre": false
-    },
-    {
-      "id": "e381",
-      "nombre": false,
-      "correoE": false,
-      "Contrasena": false
-    },
-    {
-      "id": "705c",
-      "nombre": "666",
-      "correoE": "yyqq@",
-      "Contrasena": "qqqq                                   ."
-    },
-    {
-      "id": "f41a",
-      "nombre": "qwe",
-      "correoE": "wqeq@dwqe",
-      "Contrasena": "1111"
-    },
-    {
-      "id": "23d5",
-      "nombre": "Daniel",
-      "correoE": "medina@gmail.com",
-      "Contrasena": "111                                ."
-    },
-    {
-      "id": "0cf8",
-      "nombre": "Daniel",
-      "correoE": "wejwddmedna@gmail.com",
-      "Contrasena": "hola                  .d"
-    },
-    {
-      "id": "7efb",
-      "nombre": "KEVYN DANIEL",
-      "correoE": "medina@gmail.comokokok",
-      "Contrasena": "777"
     }
   ]
 }

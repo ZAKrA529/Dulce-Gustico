@@ -1,33 +1,16 @@
-
-/* Estilos para el carrusel */
-.carousel {
-  width: 100%; /* Abarcar el ancho completo */
-  max-height: 80vh; /* Ajustar la altura */
-  overflow: hidden; /* Ocultar desbordamiento */
-  background-color: var(--blanco-crema); /* Fondo pastel */
+.container .carrusel {
+  margin-top:   auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+  height: 500px;
+  max-width: auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.carousel-image {
+.hola{
+  background-color: black;
   width: 100%;
-  height: auto; /* Mantener proporciones */
-  object-fit: cover; /* Ajustar imagen */
 }
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-/* Indicadores del carrusel */
-.carousel-indicators {
-  bottom: 10px;
-}
-
-.carousel-indicators button {
-  background-color: var(--morado-suave);
-}
-
-
