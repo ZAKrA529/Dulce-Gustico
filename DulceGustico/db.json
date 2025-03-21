@@ -20,6 +20,12 @@
       "nombre": "Prueba1",
       "correoE": "prueb1@gmail.com",
       "Contrasena": "1234"
+    },
+    {
+      "id": "458a",
+      "nombre": "Prueba2",
+      "correoE": "prueba2@gmail.com",
+      "Contrasena": "222"
     }
   ]
 }

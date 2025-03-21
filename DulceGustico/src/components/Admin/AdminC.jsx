@@ -13,7 +13,7 @@ function AdminC() {
             <a href="#" className="nav-link text-white">Dashboard</a>
           </li>
           <li className="nav-item mb-2">
-            <a href="#" className="nav-link text-white">Usuarios</a>
+            <a href="Users" className="nav-link text-white">Usuarios</a>
           </li>
           <li className="nav-item mb-2">
             <a href="productos" className="nav-link text-white">Productos</a>

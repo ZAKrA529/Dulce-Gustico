@@ -5,6 +5,7 @@ import Productos from "../pages/Productos";
 import InicioSesion from "../pages/InicioSesion";
 import Admin from "../pages/Admin";
 import Contacto from "../pages/Contacto";
+import UserPageC from "../pages/UserPageC";
 
 
 
@@ -19,6 +20,7 @@ const Routing = () => {
       <Route path="/Contacto" element={<Contacto />} />
       <Route path="/Admin" element={<Admin />} />
       <Route path="/Registros" element={<InicioSesion />} />
+      <Route path="/Users" element={<UserPageC />} />
     </Routes>
   );
 };
